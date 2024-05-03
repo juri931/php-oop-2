@@ -117,7 +117,7 @@ $petStore->displayProducts();
       <div class="card-body">
         <h5 class="card-title"><?php echo $product->title;?></h5>
         <p class="card-text">Price: $<?php echo $product->price;?></p>
-        <p class="card-text">Category: <i class="<?php echo $product->category->icon;?>"></i> <?php echo $product->category->name;?></p>
+        <p class="card-text">Category: <?php echo $product->category->name;?></p>
         <p class="card-text">Type: <?php echo $product->type;?></p>
       </div>
     </div>
