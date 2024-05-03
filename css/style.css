@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #ffd3b6, #ffb6c1, #aecbfa);
+
+  .card {
+    text-align: center;
+
+    img {
+      width: 225px;
+    }
+  }
+}
