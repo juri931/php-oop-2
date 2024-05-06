@@ -30,6 +30,9 @@ class Product implements ProductInterface {
     }
 
     public function getPrice() {
+        if(!is_int($this->price)){
+            throw new Exception('Is not a number');
+        }
         return $this->price;
     }
 
