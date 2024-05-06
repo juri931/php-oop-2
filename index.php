@@ -22,6 +22,9 @@ class Product implements ProductInterface {
     }
 
     public function getImage() {
+        if (is_null($this->image)){
+            throw new Exception('Must insert product image');
+        }
         return $this->image;
     }
 
