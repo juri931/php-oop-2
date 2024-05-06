@@ -79,7 +79,7 @@ class PetStore {
             echo '<img src="' . $product->getImage() . '" alt="' . $product->getTitle() . '">';
             echo '<h2>' . $product->getTitle() . '</h2>';
             echo '<p>Price: $' . $product->getPrice() . '</p>';
-            echo '<p><i class="' . $product->getCategoryIcon() . '"></i> ' . $product->getProductType() . '</p>';
+            echo '<p>Category: ' . $product->getCategoryIcon() . $product->getProductType() . '</p>';
             echo '</div>';
         }
     }
