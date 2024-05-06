@@ -44,6 +44,8 @@ class Product implements ProductInterface {
 
 class Food extends Product {}
 
+class Snack extends Product {}
+
 class Toy extends Product {}
 
 class Accommodation extends Product {}
@@ -94,6 +96,9 @@ $petStore->addProduct(new Accommodation('img/dog-house.jpg', 'Dog House', 100, n
 $petStore->addProduct(new Food('img/cat-food.jpg', 'Cat Food', 15, new Category('🐱', 'Cats')));
 $petStore->addProduct(new Toy('img/mouse.jpg', 'Mouse', 3, new Category('🐱', 'Cats')));
 $petStore->addProduct(new Accommodation('img/tower.jpg', 'Cat Tower', 75, new Category('🐱', 'Cats')));
+
+$petStore->addProduct(new Snack('img/dog-snack.jpg', 'Dog Snack', 7, new Category('🐶', 'Dogs')));
+
 
 $petStore->displayProducts();
 
